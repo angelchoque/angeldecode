@@ -1,4 +1,4 @@
-@use 'vars';
+@import 'vars';
 
 .main-header {
   height: 100vh;
@@ -37,25 +37,19 @@
   content: "";
   width: 1px;
   height: 2rem;
-  background: var(--color-primary);
+  background: $--color-primary;
 }
 
 /* ========== ME =========== */
 
 .me {
-  background: linear-gradient(var(--color-primary), transparent);
+  background: linear-gradient($--color-primary, transparent);
   width: 22rem;
   height: 30rem;
   position: absolute;
   left: calc(50% - 11rem);
-  /*left: 50%;
-  *//*transform-origin: translateX(-50%);
-  */margin-top: 4rem;
+  margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
-  -webkit-border-radius: 12rem 12rem 0 0;
-  -moz-border-radius: 12rem 12rem 0 0;
-  -ms-border-radius: 12rem 12rem 0 0;
-  -o-border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 5rem 1.2rem 1.5rem 1.5rem;
 }
