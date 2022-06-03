@@ -1,9 +1,9 @@
 import React from 'react'
-import "./loading.css"
+import styles from '@styles/Loading.module.scss'
 const Loading = () => {
   return (
-    <div className='loading'>
-      <div class="spinner"></div>
+    <div className={styles.loading}>
+      <div class={styles.spinner}></div>
       Sending...
     </div>
   )

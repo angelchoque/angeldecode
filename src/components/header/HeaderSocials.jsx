@@ -1,6 +1,6 @@
 import { BsLinkedin, BsGithub, BsDribbble } from "react-icons/bs"
 
-import styles from "../../styles/Header.module.scss"
+import styles from "@styles/Header.module.scss"
 
 const HeaderSocials = () => {
   return (

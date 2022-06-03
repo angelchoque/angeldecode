@@ -1,11 +1,12 @@
 import React from 'react'
-import "./portfolio.css"
+import styles from '@styles/Portfolio.module.scss'
 import IMG1 from "../../assets/portfolio1.jpg"
 import IMG2 from "../../assets/portfolio2.jpg"
 import IMG3 from "../../assets/portfolio3.jpg"
 import IMG4 from "../../assets/portfolio4.jpg"
 import IMG5 from "../../assets/portfolio5.png"
 import IMG6 from "../../assets/portfolio6.jpg"
+import Image from 'next/image'
 
 // const data = [
 //   {
@@ -58,63 +59,63 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
-      <div className="container portfolio__container">
-        <article className="portfolio__item">
-          <picture className="portfolio__item-image">
-            <img src={IMG1} alt="" />
+      <div className={`container ${styles.portfolio__container}`}>
+        <article className={styles.portfolio__item}>
+          <picture className={styles['portfolio__item-image']}>
+            <Image src={IMG1} alt="" />
           </picture>
           <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
+          <div className={styles['portfolio__item-cta']}>
             <a href="https://github.com/" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://github.com/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </article>
-        <article className="portfolio__item">
-          <picture className="portfolio__item-image">
-            <img src={IMG2} alt="" />
+        <article className={styles.portfolio__item}>
+          <picture className={styles['portfolio__item-image']}>
+            <Image src={IMG2} alt="" />
           </picture>
           <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
+          <div className={styles['portfolio__item-cta']}>
             <a href="https://github.com/" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://github.com/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </article>
-        <article className="portfolio__item">
-          <picture className="portfolio__item-image">
-            <img src={IMG3} alt="" />
+        <article className={styles.portfolio__item}>
+          <picture className={styles['portfolio__item-image']}>
+            <Image src={IMG3} alt="" />
           </picture>
           <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
+          <div className={styles['portfolio__item-cta']}>
             <a href="https://github.com/" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://github.com/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </article>
-        <article className="portfolio__item">
-          <picture className="portfolio__item-image">
-            <img src={IMG4} alt="" />
+        <article className={styles.portfolio__item}>
+          <picture className={styles['portfolio__item-image']}>
+            <Image src={IMG4} alt="" />
           </picture>
           <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
+          <div className={styles['portfolio__item-cta']}>
             <a href="https://github.com/" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://github.com/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </article>
-        <article className="portfolio__item">
-          <picture className="portfolio__item-image">
-            <img src={IMG5} alt="" />
+        <article className={styles.portfolio__item}>
+          <picture className={styles['portfolio__item-image']}>
+            <Image src={IMG5} alt="" />
           </picture>
           <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
+          <div className={styles['portfolio__item-cta']}>
             <a href="https://github.com/" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://github.com/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </article>
-        <article className="portfolio__item">
-          <picture className="portfolio__item-image">
-            <img src={IMG6} alt="" />
+        <article className={styles.portfolio__item}>
+          <picture className={styles['portfolio__item-image']}>
+            <Image src={IMG6} alt="" />
           </picture>
           <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
+          <div className={styles['portfolio__item-cta']}>
             <a href="https://github.com/" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://github.com/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>

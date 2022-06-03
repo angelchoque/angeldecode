@@ -3,7 +3,7 @@ import Image from 'next/image'
 import CTA from './CTA'
 import HeaderSocials from './HeaderSocials'
 
-import styles from "../../styles/Header.module.scss"
+import styles from "@styles/Header.module.scss"
 
 import ME from "../../assets/me.png"
 
@@ -13,7 +13,7 @@ const Header = () => {
       <div className={`container ${styles['header__container']}`}>
         <h5>Hello I'm</h5>
         <h1>Angel Choque</h1>
-        <h5 className={styles['text-light']}>Full Stack Developer</h5>
+        <h5 className='text-light'>Full Stack Developer</h5>
 
         <CTA />
         <HeaderSocials />

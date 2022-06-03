@@ -1,3 +1,5 @@
+@import 'vars';
+
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
@@ -11,7 +13,7 @@
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
-  background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+  background: linear-gradient(45deg, transparent, $--color-primary, transparent);
   display: grid;
   place-items: center;
 }
@@ -23,11 +25,11 @@
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
   overflow: hidden;
-  transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
+  transition: $--transition;
+  -webkit-transition: $--transition;
+  -moz-transition: $--transition;
+  -ms-transition: $--transition;
+  -o-transition: $--transition;
   transform: rotate(10deg);
   -webkit-transform: rotate(10deg);
   -moz-transform: rotate(10deg);
@@ -50,7 +52,7 @@
 }
 
 .about__card {
-  background: var(--color-bg-variant);
+  background: $--color-bg-variant;
   border: 1px solid transparent;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -59,21 +61,21 @@
   -o-border-radius: 1rem;
   padding: 2rem;
   text-align: center;
-  transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
+  transition: $--transition;
+  -webkit-transition: $--transition;
+  -moz-transition: $--transition;
+  -ms-transition: $--transition;
+  -o-transition: $--transition;
 }
 
 .about__card:hover {
   background: transparent;
-  border-color: var(--color-primary-variant);
+  border-color: $--color-primary-variant;
   cursor: default;
 }
 
 .about__icon {
-  color: var(--color-primary);
+  color: $--color-primary;
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
@@ -84,12 +86,12 @@
 
 .about__card small {
   font-size: 0.7rem;
-  color: var(--color-light);
+  color: $--color-light;
 }
 
 .about__content p {
   margin: 2rem 0 2.6rem;
-  color: var(--color-light);
+  color: $--color-light;
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */

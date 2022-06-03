@@ -1,4 +1,6 @@
-nav {
+@import 'vars';
+
+.main__navbar {
   background: rgba(0, 0, 0, 0.3);
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -25,7 +27,7 @@ nav {
           backdrop-filter: blur(15px);
 }
 
-nav a {
+.main__navbar a {
   background: transparent;
   padding: 0.9rem;
   border-radius: 50%;
@@ -34,15 +36,15 @@ nav a {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   display: flex;
-  color: var(--color-light);
+  color: $--color-light;
   font-size: 1.1rem;
 }
 
-nav a:hover {
+.main__navbar a:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-nav a.active {
-  background: var(--color-primary);
-  color: var(--color-bg);
+.main__navbar a.active {
+  background: $--color-primary;
+  color: $--color-bg;
 }

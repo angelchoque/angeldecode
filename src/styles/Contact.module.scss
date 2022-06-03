@@ -1,4 +1,6 @@
-.container.contact__container {
+@import 'vars';
+
+.contact__container {
   width: 58%;
   display: grid;
   grid-template-columns: 30% 58%;
@@ -12,7 +14,7 @@
 }
 
 .contact__option {
-  background: var(--color-bg-variant);
+  background: $--color-bg-variant;
   padding: 1.2rem;
   border-radius: 1.2rem;
   -webkit-border-radius: 1.2rem;
@@ -21,15 +23,15 @@
   -o-border-radius: 1.2rem;
   text-align: center;
   border: 1px solid transparent;
-  transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
+  transition: $--transition;
+  -webkit-transition: $--transition;
+  -moz-transition: $--transition;
+  -ms-transition: $--transition;
+  -o-transition: $--transition;
 }
 .contact__option:hover {
   background: transparent;
-  border-color: var(--color-primary-variant);
+  border-color: $--color-primary-variant;
   cursor: default;
 }
 
@@ -46,13 +48,13 @@
 
 /* =========== FORM =========== */
 
-form {
+.contact__form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
 
-input, textarea {
+.contact__form-input {
   width: 100%;
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -61,9 +63,9 @@ input, textarea {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
   background: transparent;
-  border: 2px solid var(--color-primary-variant);
+  border: 2px solid $--color-primary-variant;
   resize: none;
-  color: var(--color-white);
+  color: $--color-white;
 }
 
 .contact__form {
@@ -85,7 +87,7 @@ input, textarea {
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
 
 @media screen and (max-width: 1024px){
-  .container.contact__container {
+  .contact__container {
     grid-template-columns: 1fr;
     gap: 1.8rem;
   }
@@ -94,7 +96,7 @@ input, textarea {
 /* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
 
 @media screen and (max-width: 600px){
-  .container.container.contact__container {
-    width: var(--container-width-sm);
+  .contact__container {
+    width: $--container-width-sm;
   }
 }

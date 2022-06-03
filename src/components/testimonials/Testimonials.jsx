@@ -2,11 +2,12 @@ import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
-import "./testimonials.css"
+import styles from '@styles/Testimonials.module.scss'
 import AVTR1 from '../../assets/avatar1.jpg'
 import AVTR2 from '../../assets/avatar2.jpg'
 import AVTR3 from '../../assets/avatar3.jpg'
 import AVTR4 from '../../assets/avatar4.jpg'
+import Image from 'next/image';
 
 const data= [
   {
@@ -38,7 +39,7 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
 
       <Carousel 
-        className="container testimonials__container"
+        className={`container ${styles.testimonials__container}`}
         autoPlay={true}
         infiniteLoop={true}
         interval={2000}
@@ -47,12 +48,12 @@ const Testimonials = () => {
         {
           data.map(({avatar, name, review}, index) => {
             return (
-              <div key={index} className="testimonial">
-                <picture className="client__avatar">
-                  <img src={avatar} alt="" />
+              <div key={index} className={styles.testimonial}>
+                <picture className={styles.client__avatar}>
+                  <Image src={avatar} alt="" />
                 </picture>
-                  <h5 className='client__name'>{name}</h5>
-                  <small className='client__review'>{review}</small>
+                  <h5 className={styles.client__name}>{name}</h5>
+                  <small className={styles.client__review}>{review}</small>
               </div>
             )
           })

@@ -1,4 +1,4 @@
-import styles from "../../styles/Header.module.scss"
+import styles from "@styles/Header.module.scss"
 
 const CTA = () => {
   return (

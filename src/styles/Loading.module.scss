@@ -1,3 +1,5 @@
+@import 'vars';
+
 .loading{
   position: absolute;
   display: inline-block;
@@ -5,7 +7,7 @@
 .spinner {
   width: 56px;
   height: 56px;
-  border: 11.2px var(--color-primary) double;
+  border: 11.2px $--color-primary double;
   border-left-style: solid;
   border-radius: 50%;
   -webkit-animation: spinner-aib1d7 0.75s infinite linear;

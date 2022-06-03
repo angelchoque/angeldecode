@@ -5,44 +5,44 @@ import { AiOutlineHome, AiOutlineUser } from "react-icons/ai"
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi"
 import { RiServiceLine } from "react-icons/ri"
 
-import "./nav.css"
+import styles from '@styles/NavBar.module.scss'
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#")
   return (
-    <nav>
+    <nav className={styles.main__navbar}>
       <a 
         href="#"
         onClick={() => setActiveNav("#")} 
-        className={activeNav === "#" ? "active" : ""}
+        className={activeNav === "#" ? styles.active : ""}
       >
         <AiOutlineHome />
       </a>
       <a
         href="#about"
         onClick={() => setActiveNav("#about")}
-        className={activeNav === "#about" ? "active" : ""}
+        className={activeNav === "#about" ? styles.active : ""}
       >
         <AiOutlineUser />
       </a>
       <a
         href="#experience"
         onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
+        className={activeNav === "#experience" ? styles.active : ""}
       >
         <BiBook />
       </a>
       <a
         href="#services"
         onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
+        className={activeNav === "#services" ? styles.active : ""}
       >
         <RiServiceLine />
       </a>
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}
-        className={activeNav === "#contact" ? "active" : ""}
+        className={activeNav === "#contact" ? styles.active : ""}
       >
         <BiMessageSquareDetail />
       </a>

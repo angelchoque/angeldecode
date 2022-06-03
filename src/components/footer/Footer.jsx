@@ -3,14 +3,14 @@ import React from 'react'
 import { FaFacebookF } from "react-icons/fa"
 import { FiInstagram } from "react-icons/fi"
 import { FaTwitter } from "react-icons/fa"
-import "./footer.css"
+import styles from '@styles/Footer.module.scss'
 
 const Footer = () => {
   return (
-    <footer>
-      <a href="#" className='footer__logo'>ANGEL DECODE</a>
+    <footer className={styles.footer__container}>
+      <a href="#" className={styles.footer__logo}>ANGEL DECODE</a>
 
-      <ul className="permalinks">
+      <ul className={styles.permalinks}>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -19,13 +19,13 @@ const Footer = () => {
         <li><a href="#testimonials">Testimonial</a></li>
       </ul>
 
-      <ul className="footer__socials">
+      <ul className={styles.footer__socials}>
         <a href="https://facebook.com"> <FaFacebookF /> </a>
         <a href="https://instagram.com"> <FiInstagram /> </a>
         <a href="https://twitter.com"> <FaTwitter /> </a>
       </ul>
 
-      <div className="footer__copyright">
+      <div className={styles.footer__copyright}>
         <small>&copy; Angel Decode. All rights reserved.</small>
       </div>
     </footer>
