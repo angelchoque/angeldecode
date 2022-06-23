@@ -33,8 +33,8 @@ const Contact = () => {
           <article className={styles.contact__option}>
             <MdOutlineEmail className={styles['contact__option-icon']} />
             <h4>Email</h4>
-            <h5>example@gmail.com</h5>
-            <a href="mailto:angelchoque@gmail.com" target="_blank" rel="noopener noreferrer">Send a message</a>
+            <h5>miguelangelchoquepacompia@gmail.com</h5>
+            <a href="mailto:miguelangelchoquepacompia@gmail.com" target="_blank" rel="noopener noreferrer">Send a message</a>
           </article>
           <article className={styles.contact__option}>
             <RiMessengerLine className={styles['contact__option-icon']} />
@@ -46,7 +46,7 @@ const Contact = () => {
             <BsWhatsapp className={styles['contact__option-icon']} />
             <h4>WhatsaApp</h4>
             <h5>+51 943486851</h5>
-            <a href="https://api.whatsapp/send?phone+51943486851" target="_blank" rel="noopener noreferrer">Send a message</a>
+            <a href="https://api.whatsapp.com/send?phone=51943486851" target="_blank" rel="noopener noreferrer">Send a message</a>
           </article>
         </div>
 
