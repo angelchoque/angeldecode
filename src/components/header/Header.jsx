@@ -12,7 +12,7 @@ const Header = () => {
     <header className={styles['main-header']}>
       <div className={`container ${styles['header__container']}`}>
         <h5>Hello I'm</h5>
-        <h1>Angel Choque</h1>
+        <h1>Angel Decode</h1>
         <h5 className='text-light'>Full Stack Developer</h5>
 
         <CTA />

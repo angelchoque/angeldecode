@@ -11,8 +11,10 @@ export default function App ({ Component, pageProps }) {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="angel choque, frontend developer, miguel angel choque" />
-        <meta name="copyright" content="Angel Choque" />
+        <meta name="copyright" content="angeldecode" />
+        <meta name="description" content="Miguel Angel Choque website - portfolio. Frontend developer web" />
+        <meta name="keywords" content=" frontend developer, miguel angel choque, angel decode, angeldecode, angel choque, miguel angel choque website, miguel angel choque portfolio, angel decode portfolio" />
+        <meta name="author" content="angeldecode" />
         <title>Angel Choque | Portfolio</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       </Head>

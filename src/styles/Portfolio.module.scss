@@ -29,12 +29,19 @@
 
 .portfolio__item-image {
   display: block;
-  border-radius: 1.5rem;
-  -webkit-border-radius: 1.5rem;
-  -moz-border-radius: 1.5rem;
-  -ms-border-radius: 1.5rem;
-  -o-border-radius: 1.5rem;
   overflow: hidden;
+  > span {
+    height: 180px !important;
+    img {
+      -o-object-fit: cover;
+         object-fit: cover;
+    }
+  }
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  -ms-border-radius: 1.2rem;
+  -o-border-radius: 1.2rem;
 }
 
 .portfolio__item h3 {

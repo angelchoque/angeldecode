@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from '@styles/Portfolio.module.scss'
-import IMG1 from "../../assets/portfolio1.jpg"
-import IMG2 from "../../assets/portfolio2.jpg"
-import IMG3 from "../../assets/portfolio3.jpg"
-import IMG4 from "../../assets/portfolio4.jpg"
+import IMG1 from "../../assets/restCountries.png"
+import IMG2 from "../../assets/advice-Generator-App.png"
+import IMG3 from "../../assets/react-shop-admin.png"
+import IMG4 from "../../assets/React-Shop.png"
 import IMG5 from "../../assets/portfolio5.png"
 import IMG6 from "../../assets/portfolio6.jpg"
 import Image from 'next/image'
@@ -62,7 +62,7 @@ const Portfolio = () => {
       <div className={`container ${styles.portfolio__container}`}>
         <article className={styles.portfolio__item}>
           <picture className={styles['portfolio__item-image']}>
-            <Image src={IMG1} alt="" />
+            <Image src={IMG1} alt="rest countries page practice"/>
           </picture>
           <h3>This is a portfolio item title</h3>
           <div className={styles['portfolio__item-cta']}>
@@ -72,32 +72,32 @@ const Portfolio = () => {
         </article>
         <article className={styles.portfolio__item}>
           <picture className={styles['portfolio__item-image']}>
-            <Image src={IMG2} alt="" />
+            <Image src={IMG2} alt="advice generator app" />
           </picture>
-          <h3>This is a portfolio item title</h3>
+          <h3>Advice Generator App</h3>
           <div className={styles['portfolio__item-cta']}>
-            <a href="https://github.com/" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://github.com/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/angelchoque/advice-generator-app" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://adorable-tanuki-1ba5e9.netlify.app" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </article>
         <article className={styles.portfolio__item}>
           <picture className={styles['portfolio__item-image']}>
-            <Image src={IMG3} alt="" />
+            <Image src={IMG3} alt="react shop admin" />
           </picture>
-          <h3>This is a portfolio item title</h3>
+          <h3>React Shop Admin</h3>
           <div className={styles['portfolio__item-cta']}>
-            <a href="https://github.com/" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://github.com/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/angelchoque/react-shop-admin" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://react-shop-admin-4hayi4pt0-angelchoque.vercel.app/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </article>
         <article className={styles.portfolio__item}>
           <picture className={styles['portfolio__item-image']}>
-            <Image src={IMG4} alt="" />
+            <Image src={IMG4} alt="react shop website" />
           </picture>
-          <h3>This is a portfolio item title</h3>
+          <h3>React Shop Website</h3>
           <div className={styles['portfolio__item-cta']}>
-            <a href="https://github.com/" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://github.com/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/angelchoque/react-shop" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://react-shop-qaqvu7olj-angelchoque.vercel.app/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </article>
         <article className={styles.portfolio__item}>
