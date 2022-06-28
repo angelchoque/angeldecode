@@ -3,7 +3,10 @@
 .loading{
   position: absolute;
   display: inline-block;
+  right: calc(50% - 44px);
+  top: 140px
 }
+
 .spinner {
   width: 56px;
   height: 56px;

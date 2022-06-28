@@ -1,7 +1,6 @@
 import React, { useRef, useState }from 'react'
 import emailjs from 'emailjs-com';
 import { MdOutlineEmail } from "react-icons/md"
-import { RiMessengerLine } from "react-icons/ri"
 import { BsWhatsapp } from "react-icons/bs"
 import { BsCheckCircleFill } from "react-icons/bs"
 import Loading from '../loading/Loading';
@@ -11,7 +10,7 @@ const Contact = () => {
 
   const form = useRef();
   const [isLoading, setIsLoading] = useState(false)
-  const [done, setDone] = useState(false)
+  const [done, setDone] = useState(true)
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -33,14 +32,8 @@ const Contact = () => {
           <article className={styles.contact__option}>
             <MdOutlineEmail className={styles['contact__option-icon']} />
             <h4>Email</h4>
-            <h5>miguelangelchoquepacompia@gmail.com</h5>
-            <a href="mailto:miguelangelchoquepacompia@gmail.com" target="_blank" rel="noopener noreferrer">Send a message</a>
-          </article>
-          <article className={styles.contact__option}>
-            <RiMessengerLine className={styles['contact__option-icon']} />
-            <h4>Messenger</h4>
-            <h5>Angel Choque</h5>
-            <a href="https://m.me" target="_blank" rel="noopener noreferrer">Send a message</a>
+            <h5>hello@angeldecode.com</h5>
+            <a href="mailto:hello@angeldecode.com" target="_blank" rel="noopener noreferrer">Send a message</a>
           </article>
           <article className={styles.contact__option}>
             <BsWhatsapp className={styles['contact__option-icon']} />
@@ -51,14 +44,37 @@ const Contact = () => {
         </div>
 
         {/* FORM CONTACT */}
+        
         <form ref={form} onSubmit={sendEmail} className={styles.contact__form}>
-          <input className={styles['contact__form-input']} type="text" name='name' placeholder='Your Full Name' required />
-          <input className={styles['contact__form-input']} type="email" name='email' placeholder='Your Email' required />
-          <textarea className={styles['contact__form-input']} name="message" rows="7" placeholder='Your Message' required></textarea>
+          <input
+            disabled={isLoading}
+            className={`${styles['contact__form-input']} ${isLoading && "disabled-item"}`}
+            type="text"
+            name='name'
+            placeholder='Your Full Name'
+            required
+          />
+          <input
+            disabled={isLoading}
+            className={`${styles['contact__form-input']} ${isLoading && "disabled-item"}`}
+            type="email"
+            name='email'
+            placeholder='Your Email'
+            required
+          />
+          <textarea
+            className={`${styles['contact__form-input']} ${isLoading && "disabled-item"}`}
+            name="message"
+            rows="7"
+            placeholder='Your Message'
+            required
+            disabled={isLoading}
+          >
+          </textarea>
           {isLoading && <Loading className={styles.contact__loading}/>}
           {done 
-            ? <BsCheckCircleFill class={styles["contact__check-done"]} />
-            : <button type='submit' className='btn btn-primary'>Send Message</button>}
+            ? <span className={styles["check-done-container"]}><BsCheckCircleFill className={styles["contact__check-done"]} />The message has been sent successfully</span>
+            : <button disabled={isLoading} type='submit' className={`btn btn-primary ${isLoading && "disabled-item"}`}>Send Message</button>}
         </form>
       </div>
     </section>

@@ -28,7 +28,9 @@
   -moz-transition: $--transition;
   -ms-transition: $--transition;
   -o-transition: $--transition;
+  max-width: 220px;
 }
+
 .contact__option:hover {
   background: transparent;
   border-color: $--color-primary-variant;
@@ -52,6 +54,9 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  button[disabled] {
+    cursor: not-allowed;
+  }
 }
 
 .contact__form-input {
@@ -80,8 +85,15 @@
   bottom: 0;
 }
 
+.check-done-container {
+  display: flex;
+  align-items: center;
+  color: greenyellow;
+}
+
 .contact__check-done {
   font-size: 4rem;
+  margin-right: 1rem;
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */

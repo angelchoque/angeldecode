@@ -115,8 +115,7 @@ a:hover {
 img {
   display: block;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
@@ -142,3 +141,228 @@ img {
     margin-bottom: 2rem;
   }
 }
+
+.disabled-item {
+  opacity: .3;
+}
+
+// ///////////////////////////========
+
+.home-container {
+  position: relative;
+  animation: move 1s linear infinite forwards;
+}
+
+.logo {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-show {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes showspin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hover-show-active {
+  animation: showspin 8s linear .3s infinite;
+}
+
+.circle {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-show-active {
+  .circle {
+    opacity: 1;
+  }
+}
+
+@mixin childsContent($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.hover-show-active .circle:nth-child(1) {
+  @include childsContent("../assets/props/html.png");
+  transform: translateY(-210%);
+}
+
+.hover-show-active .circle:nth-child(2) {
+  @include childsContent("../assets/props/css.png");
+  transform: translateX(150%) translateY(-150%);
+}
+
+.hover-show-active .circle:nth-child(3) {
+  @include childsContent("../assets/props/js.jpg");
+  transform: translateX(210%);
+}
+
+.hover-show-active .circle:nth-child(4) {
+  @include childsContent("../assets/props/bootstrap.png");
+  transform: translateX(150%) translateY(150%);
+}
+
+.hover-show-active .circle:nth-child(5) {
+  @include childsContent("../assets/props/react.png");
+  transform: translateY(210%);
+}
+.hover-show-active .circle:nth-child(6) {
+  @include childsContent("../assets/props/kotlin.png");
+  transform: translateX(-150%) translateY(150%);
+}
+
+.hover-show-active .circle:nth-child(7) {
+  @include childsContent("../assets/props/c-plus-plus.png");
+  transform: translateX(-210%);
+}
+
+.hover-show-active .circle:nth-child(8) {
+  @include childsContent("../assets/props/c-sharp.png");
+  transform: translateX(-150%) translateY(-150%);
+}
+
+@keyframes fade-in {
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.home-container img {
+  position: absolute;
+  transform: translate(500px);
+  opacity: 0;
+  animation: fade-in 1s ease 1 0.5s forwards;
+}
+
+
+// @media (max-width: 820px) {
+//   .home-container {
+//     padding: 150px 40px;
+//     margin-top: 20px;
+//   }
+
+//   .home-container .logo {
+//     height: 220px;
+//     width: 220px;
+//   }
+
+//   .hover-show {
+//     height: 220px;
+//     width: 220px;
+//   }
+
+//   .circle {
+//     transition: 0.2s ease;
+//     opacity: 0;
+//   }
+
+//   .home-container img {
+//     border-radius: 50%;
+//     // transform: translate(-200px);
+//     opacity: 0;
+//     animation: fade-in 1s ease 1 0.5s forwards;
+//   }
+
+// }
+
+// @media (max-width: 500px) {
+//   .home-container {
+//     min-height: 100vh;
+//     padding: 150px 30px;
+//     margin-top: 20px;
+//     overflow: hidden;
+//   }
+
+//   .logo {
+//     height: 220px;
+//     width: 220px;
+//   }
+
+//   .hover-show {
+//     position: absolute;
+//     height: 220px;
+//     width: 220px;
+//   }
+
+//   .circle {
+//     position: absolute;
+//     transition: 0.2s ease;
+//     opacity: 0;
+//   }
+
+//   .home-container img {
+//     border-radius: 50%;
+//     // transform: translate(-200px);
+//     opacity: 0;
+//     animation: fade-in 1s ease 1 0.5s forwards;
+//   }
+// }
+
+// @media (max-width: 400px) {
+//   .home-container {
+//     position: relative;
+//     min-height: 100vh;
+//     padding: 150px 10px 0;
+//     margin-top: 20px;
+//     flex-direction: column;
+//     overflow: hidden;
+//   }
+
+//   .logo {
+//     height: 180px;
+//     width: 180px;
+//   }
+
+//   .hover-show {
+//     position: absolute;
+//     height: 180px;
+//     width: 180px;
+//   }
+
+//   .circle {
+//     height: 65px;
+//     width: 65px;
+//     transition: 0.2s ease;
+//     opacity: 0;
+//   }
+
+//   .home-container img {
+//     // transform: translate(-200px);
+//     opacity: 0;
+//     animation: fade-in 1s ease 1 0.5s forwards;
+//   }
+// }

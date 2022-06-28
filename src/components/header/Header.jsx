@@ -6,6 +6,7 @@ import HeaderSocials from './HeaderSocials'
 import styles from "@styles/Header.module.scss"
 
 import ME from "../../assets/me.png"
+import Home from '../Home/Home'
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
         <h5>Hello I'm</h5>
         <h1>Angel Decode</h1>
         <h5 className='text-light'>Full Stack Developer</h5>
-
+        {/* <Home /> */}
         <CTA />
         <HeaderSocials />
 

@@ -1,9 +1,10 @@
 @import 'vars';
 
 .main-header {
-  height: 100vh;
-  padding-top: 7rem;
-  overflow: hidden;
+  min-height: 100vh;
+  // padding-top: 7rem;
+  padding-top: 6rem;
+  // overflow: hidden;
 }
 
 .header__container {
