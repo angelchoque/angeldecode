@@ -6,7 +6,7 @@ import HeaderSocials from './HeaderSocials'
 import styles from "@styles/Header.module.scss"
 
 import ME from "../../assets/me.png"
-import Home from '../Home/Home'
+// import Home from '../Home/Home'
 
 const Header = () => {
   return (

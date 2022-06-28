@@ -3,7 +3,7 @@ import styles from "@styles/Header.module.scss"
 const CTA = () => {
   return (
     <div className={styles.cta}>
-      <a href="/files/cv.pdf" download className='btn'>Download CV</a>
+      <a href="/files/CV-miguelangel.pdf" download className='btn'>Download CV</a>
       <a href="#contact" className={`btn btn-primary`}>Let's Talk</a>
     </div>
   )
