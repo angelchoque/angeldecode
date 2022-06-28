@@ -10,7 +10,7 @@ const Contact = () => {
 
   const form = useRef();
   const [isLoading, setIsLoading] = useState(false)
-  const [done, setDone] = useState(true)
+  const [done, setDone] = useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault();
