@@ -59,7 +59,7 @@ const Experience = () => {
 
         {/* BACKEND */}
 
-        <div className={styles.experience__backend}>
+        {/* <div className={styles.experience__backend}>
           <h3>Backend Development</h3>
           <div className={styles.experience__content}>
             <article className={styles.experience__details}>
@@ -105,7 +105,7 @@ const Experience = () => {
               </div>
             </article>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

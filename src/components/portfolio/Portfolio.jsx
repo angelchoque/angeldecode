@@ -100,7 +100,7 @@ const Portfolio = () => {
             <a href="https://react-shop-qaqvu7olj-angelchoque.vercel.app/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </article>
-        <article className={styles.portfolio__item}>
+        {/* <article className={styles.portfolio__item}>
           <picture className={styles['portfolio__item-image']}>
             <Image src={IMG5} alt="" />
           </picture>
@@ -119,7 +119,7 @@ const Portfolio = () => {
             <a href="https://github.com/" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://github.com/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
-        </article>
+        </article> */}
         {/* 
           data.map(({id, image, title, github, demo}) =>{
             return(

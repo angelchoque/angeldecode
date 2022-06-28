@@ -9,7 +9,7 @@ const Services = () => {
       <h2>Services</h2>
       <div className={`container ${styles.services__container}`}>
       {/* UI/UX */}
-        <article className={styles.service}>
+        {/* <article className={styles.service}>
           <div className={styles.service__head}>
             <h3>UI/UX Design</h3>
           </div>
@@ -40,7 +40,7 @@ const Services = () => {
               <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
             </li>
           </ul>
-        </article>
+        </article> */}
 
         {/* WEB DEVELOPMENT */}
 
@@ -52,27 +52,15 @@ const Services = () => {
           <ul className={styles.service__list}>
             <li>
               <BiCheck className={styles['service__list-icon']} />
-              <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+              <p>Layout HTML - React</p>
             </li>
             <li>
               <BiCheck className={styles['service__list-icon']} />
-              <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+              <p>Design UI/UX</p>
             </li>
             <li>
               <BiCheck className={styles['service__list-icon']} />
-              <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
-            </li>
-            <li>
-              <BiCheck className={styles['service__list-icon']} />
-              <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
-            </li>
-            <li>
-              <BiCheck className={styles['service__list-icon']} />
-              <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
-            </li>
-            <li>
-              <BiCheck className={styles['service__list-icon']} />
-              <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+              <p>Deploy web app</p>
             </li>
           </ul>
         </article>
@@ -86,27 +74,11 @@ const Services = () => {
           <ul className={styles.service__list}>
             <li>
               <BiCheck className={styles['service__list-icon']} />
-              <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+              <p>Marketing web</p>
             </li>
             <li>
               <BiCheck className={styles['service__list-icon']} />
-              <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
-            </li>
-            <li>
-              <BiCheck className={styles['service__list-icon']} />
-              <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
-            </li>
-            <li>
-              <BiCheck className={styles['service__list-icon']} />
-              <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
-            </li>
-            <li>
-              <BiCheck className={styles['service__list-icon']} />
-              <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
-            </li>
-            <li>
-              <BiCheck className={styles['service__list-icon']} />
-              <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+              <p>Content Creations - Social Media</p>
             </li>
           </ul>
         </article>

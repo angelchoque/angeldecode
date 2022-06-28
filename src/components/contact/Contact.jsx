@@ -7,9 +7,9 @@ import Loading from '../loading/Loading';
 import styles from '@styles/Contact.module.scss'
 
 const Contact = () => {
-
-  const form = useRef();
+  const form = useRef(null)
   const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState(null)
   const [done, setDone] = useState(false)
 
   const sendEmail = (e) => {
@@ -20,8 +20,13 @@ const Contact = () => {
           setIsLoading(false)
           setDone(true)
           e.target.reset()
+          setTimeout(() => {
+            setDone(false)
+          }, 5000)
       }, (error) => {
-      });
+        setError(error)
+        setIsLoading(false)
+      })
   }
   return (
     <section id='contact'>
@@ -73,8 +78,20 @@ const Contact = () => {
           </textarea>
           {isLoading && <Loading className={styles.contact__loading}/>}
           {done 
-            ? <span className={styles["check-done-container"]}><BsCheckCircleFill className={styles["contact__check-done"]} />The message has been sent successfully</span>
-            : <button disabled={isLoading} type='submit' className={`btn btn-primary ${isLoading && "disabled-item"}`}>Send Message</button>}
+            ? <span
+                className={styles["check-done-container"]}
+              >
+              <BsCheckCircleFill className={styles["contact__check-done"]} />
+              The message has been sent successfully
+              </span>
+            : <button
+              disabled={isLoading}
+              type='submit'
+              className={`btn btn-primary ${isLoading && "disabled-item"}`}
+              >
+              Send Message
+              </button>}
+          {error && "Error - try again"}
         </form>
       </div>
     </section>
